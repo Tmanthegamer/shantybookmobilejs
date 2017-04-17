@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "circular_bold";
+    src: url(circular-book/lineto-circular-pro-bold.ttf);
+}
+
+@font-face {
+    font-family: "circular_book";
+    src: url(circular-book/lineto-circular-pro-book.ttf);
+}
+
+@font-face {
+    font-family: "circular_book_italic";
+    src: url(circular-book/lineto-circular-pro-bookItalic.ttf);
+}
+
+@font-face {
+    font-family: "circular_medium";
+    src: url(circular-book/lineto-circular-pro-medium.ttf);
+}
+
+@font-face {
+    font-family: "circular_medium_italic";
+    src: url(circular-book/lineto-circular-pro-mediumItalic.ttf);
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.cicular-bold {
+    font-family: "circular_bold";
+}
+.cicular-book {
+    font-family: "circular_book";
+}
+.cicular-bookI {
+    font-family: "circular_book_italic";
+}
+.cicular-medium {
+    font-family: "circular_medium";
+}
+.cicular-mediumI {
+    font-family: "circular_medium_italic";
+}
+
+body {
+    font-family: "circular_book";
+    margin:0px;
+}
+
+div.stanza {
+}
+
+.title {
+
+}
+
+p.line {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+p.line:last-child {
+    margin-bottom: 1em;
+}
+
+.song {
+    text-align: -webkit-center;
+    font-size: 2.5em;  
+}
+
+.chorus {
+    font-family: "circular_bold";
+    color: teal;
+}
+
+.ise_the_by {
+    background-image: url(pictures/sunset-dancing.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 15px #000, 1px 1px 15px #000, 1px 1px 15px #000, 1px 1px 15px #000;
+    width: 100vw;
+    height: 90vh;    
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+
+.action-bar {
+    font-size: 5em;
+    height: 10vh;
+}
+
+.action-bar ul {
+    margin: 0px;
+    display: -webkit-box;
+    list-style: none;
+}
+
+.action-bar ul li {
+    margin-left: 24px;
+    margin-top: 10px;
+}
+
+.left-arrow {
+
+}
+
+.right-arrow {
+
+}
+
+.circle {
+    border-radius: 50%;
+    display: inline-block;
+    background-color: red;
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+}
+
+.circle i.fa {
+    text-shadow: none;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}

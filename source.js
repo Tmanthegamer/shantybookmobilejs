@@ -15,7 +15,7 @@ var SONGS = [
              { name:'spanish_ladies',                       lyrics: 'spanish_ladies.html',                       mp3: 'Snd_14.mp3'},
              { name:'beneath_the_black_flag',               lyrics: 'beneath_the_black_flag.html',               mp3: 'Snd_15.mp3'},
              { name:'running_down_to_cuba',                 lyrics: 'running_down_to_cuba.html',                 mp3: 'Snd_16.mp3'},
-             { name:'st._brendans_fair_isle',               lyrics: 'st._brendans_fair_isle.html',               mp3: 'Snd_17.mp3'},
+             { name:'st_brendans_fair_isle',               lyrics: 'st_brendans_fair_isle.html',               mp3: 'Snd_17.mp3'},
              { name:'captain_kidd',                         lyrics: 'captain_kidd.html',                         mp3: 'Snd_18.mp3'},
              { name:'marching_inland',                      lyrics: 'marching_inland.html',                      mp3: 'Snd_19.mp3'},
              { name:'yo_ho_yo_ho',                          lyrics: 'yo_ho_yo_ho.html',                          mp3: 'Snd_20.mp3'},

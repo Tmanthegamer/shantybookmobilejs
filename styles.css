@@ -82,6 +82,13 @@ p.line:last-child {
     background-size: cover;
 }
 
+.background-cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .action-bar {
     font-size: 5em;
     height: 10vh;

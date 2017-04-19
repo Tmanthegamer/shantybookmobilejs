@@ -25,6 +25,15 @@ var SONGS = [
              { name:'farewell_shanty',                      lyrics: 'farewell_shanty.html',                      mp3: 'Snd_24.mp3'}
             ];
 
+var styles = {
+      backgroundColor : "#ddd",
+      fontWeight: "64px"
+    };
+
+var cssBackgroundList   = { '-webkit-background-size' : 'cover',
+                            '-moz-background-size'    : 'cover',
+                            '-o-background-size'      : 'cover',
+                            'background-size'         : 'cover'};
 
 $( document ).ready(function() {
     
@@ -37,10 +46,17 @@ $( document ).ready(function() {
         var songToLoad = this.id;
         //$( '#'+buttonId).hide();
         $( '.activate' ).hide();
-        $('#test').load('/lyrics/'+songToLoad+'.html');
-        // $( '#'+songToLoad+'_song' ).show();
+        $('#song-container').load('/lyrics/'+songToLoad+'.html', function( response, status, xhr ) {
+            var img = songToLoad+'.jpg';
+
+            if ( status == "success" ) {
+                $('#'+songToLoad+"_song").addClass( 'background-cover' );
+                $('#'+songToLoad+"_song").css('background-image', 'url(pictures/sunset-dancing.png)'); 
+                //$('#'+songToLoad+"_song").css('background-image', 'url(pictures/'+img+')'); 
+            }
+        });
+
     });
-    
     // var MAX_HEIGHT  = $(window).height();
     // var MAX_WIDTH   = $(window).width();
 });

@@ -74,20 +74,13 @@ p.line:last-child {
     color: teal;
 }
 
-.ise_the_by {
-    background-image: url(pictures/sunset-dancing.jpg);
+#ise_the_by_song {
+    background-image: url(pictures/ise_the_by.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: white;
-    text-shadow: 1px 1px 15px #000, 1px 1px 15px #000, 1px 1px 15px #000, 1px 1px 15px #000;
-    width: 100vw;
-    height: 90vh;    
-    padding-bottom: 1em;
-    padding-top: 1em;
 }
-
 
 .action-bar {
     font-size: 5em;
@@ -127,4 +120,19 @@ p.line:last-child {
     position: absolute;
     top: 18px;
     left: 18px;
+}
+
+button.activate {
+    width: 100vw;
+    height: 20vw;
+    font-size: -webkit-xxx-large;
+}
+
+.song {
+    color: white;
+    text-shadow: 1px 1px 15px #000, 1px 1px 15px #000, 1px 1px 15px #000, 1px 1px 15px #000;
+    width: 100vw;
+    height: 90vh;    
+    padding-bottom: 1em;
+    padding-top: 1em;
 }

@@ -1,11 +1,49 @@
-console.log('hello');
+var SONGS = [
+             { name:'ise_the_by',                           lyrics: 'ise_the_by.html',                           mp3: 'Snd_1.mp3'},
+             { name:'farewell_to_nova_scotia',              lyrics: 'farewell_to_nova_scotia.html',              mp3: 'Snd_2.mp3'},
+             { name:'barrets_privateers',                   lyrics: 'barrets_privateers.html',                   mp3: 'Snd_3.mp3'},
+             { name:'what_do_you_do_with_a_drunken_sailor', lyrics: 'what_do_you_do_with_a_drunken_sailor.html', mp3: 'Snd_4.mp3'},
+             { name:'leave_her_johnny',                     lyrics: 'leave_her_johnny.html',                     mp3: 'Snd_5.mp3'},
+             { name:'haul_away_joe',                        lyrics: 'haul_away_joe.html',                        mp3: 'Snd_6.mp3'},
+             { name:'sante_anno',                           lyrics: 'sante_anno.html',                           mp3: 'Snd_7.mp3'},
+             { name:'lowlands',                             lyrics: 'lowlands.html',                             mp3: 'Snd_8.mp3'},
+             { name:'bully_in_the_alley',                   lyrics: 'bully_in_the_alley.html',                   mp3: 'Snd_9.mp3'},
+             { name:'cheerly_man',                          lyrics: 'cheerly_man.html',                          mp3: 'Snd_10.mp3'},
+             { name:'storm_along',                          lyrics: 'storm_along.html',                          mp3: 'Snd_11.mp3'},
+             { name:'high_barbaree',                        lyrics: 'high_barbaree.html',                        mp3: 'Snd_12.mp3'},
+             { name:'the_fish_of_the_sea',                  lyrics: 'the_fish_of_the_sea.html',                  mp3: 'Snd_13.mp3'},
+             { name:'spanish_ladies',                       lyrics: 'spanish_ladies.html',                       mp3: 'Snd_14.mp3'},
+             { name:'beneath_the_black_flag',               lyrics: 'beneath_the_black_flag.html',               mp3: 'Snd_15.mp3'},
+             { name:'running_down_to_cuba',                 lyrics: 'running_down_to_cuba.html',                 mp3: 'Snd_16.mp3'},
+             { name:'st._brendans_fair_isle',               lyrics: 'st._brendans_fair_isle.html',               mp3: 'Snd_17.mp3'},
+             { name:'captain_kidd',                         lyrics: 'captain_kidd.html',                         mp3: 'Snd_18.mp3'},
+             { name:'marching_inland',                      lyrics: 'marching_inland.html',                      mp3: 'Snd_19.mp3'},
+             { name:'yo_ho_yo_ho',                          lyrics: 'yo_ho_yo_ho.html',                          mp3: 'Snd_20.mp3'},
+             { name:'hoist_the_colours',                    lyrics: 'hoist_the_colours.html',                    mp3: 'Snd_21.mp3'},
+             { name:'away_away_away',                       lyrics: 'away_away_away.html',                       mp3: 'Snd_22.mp3'},
+             { name:'sailing_for_adventure',                lyrics: 'sailing_for_adventure.html',                mp3: 'Snd_23.mp3'},
+             { name:'farewell_shanty',                      lyrics: 'farewell_shanty.html',                      mp3: 'Snd_24.mp3'}
+            ];
+
 
 $( document ).ready(function() {
+    
+    $( '.activate' ).click(function( source ) {
+        debugger;
+
+        var buttonId = source.currentTarget.id;
+        console.log( 'activate hit', buttonId );
+
+        var songToLoad = this.id;
+        //$( '#'+buttonId).hide();
+        $( '.activate' ).hide();
+        $('#test').load('/lyrics/'+songToLoad+'.html');
+        // $( '#'+songToLoad+'_song' ).show();
+    });
     
     // var MAX_HEIGHT  = $(window).height();
     // var MAX_WIDTH   = $(window).width();
 });
-
 
 // $( window ).load(function() {
 //     console.log('hello');

@@ -74,6 +74,11 @@ p.line:last-child {
     color: teal;
 }
 
+.non-chorus {
+    color: white;
+    font-family: "circular_book";
+}
+
 #ise_the_by_song {
     background-image: url(pictures/ise_the_by.jpg);
     -webkit-background-size: cover;
@@ -142,4 +147,12 @@ button.activate {
     height: 90vh;    
     padding-bottom: 1em;
     padding-top: 1em;
+}
+
+li.item {
+
+}
+
+.info {
+    
 }

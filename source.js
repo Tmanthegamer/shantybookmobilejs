@@ -38,7 +38,7 @@ var cssBackgroundList   = { '-webkit-background-size' : 'cover',
 $( document ).ready(function() {
     
     $( '.activate' ).click(function( source ) {
-        debugger;
+        //debugger;
 
         var buttonId = source.currentTarget.id;
         console.log( 'activate hit', buttonId );
@@ -48,11 +48,11 @@ $( document ).ready(function() {
         $( '.activate' ).hide();
         $('#song-container').load('/lyrics/'+songToLoad+'.html', function( response, status, xhr ) {
             var img = songToLoad+'.jpg';
-
+            debugger;
             if ( status == "success" ) {
                 $('#'+songToLoad+"_song").addClass( 'background-cover' );
-                $('#'+songToLoad+"_song").css('background-image', 'url(pictures/sunset-dancing.png)'); 
-                //$('#'+songToLoad+"_song").css('background-image', 'url(pictures/'+img+')'); 
+                //$('#'+songToLoad+"_song").css('background-image', 'url(pictures/sunset-dancing.png)'); 
+                $('#'+songToLoad+"_song").css('background-image', 'url(pictures/'+img+')'); 
             }
         });
 

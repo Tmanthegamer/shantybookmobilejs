@@ -97,43 +97,9 @@ p.line:last-child {
 .action-bar {
     font-size: 5em;
     height: 10vh;    
-    background: antiquewhite;
-}
-
-.action-bar ul {
-    margin: 0px;
-    display: -webkit-box;
-    list-style: none;
-
-}
-
-.action-bar ul li {
-    margin-left: 24px;
-    margin-top: 10px;
-}
-
-.left-arrow {
-
-}
-
-.right-arrow {
-
-}
-
-.circle {
-    border-radius: 50%;
-    display: inline-block;
-    background-color: red;
-    width: 1.5em;
-    height: 1.5em;
-    position: relative;
-}
-
-.circle i.fa {
-    text-shadow: none;
-    position: absolute;
-    top: 18px;
-    left: 18px;
+    background: black;
+    text-align: center;
+    border-top: 2px solid white;
 }
 
 button.activate {
@@ -158,4 +124,86 @@ li.item {
 
 .info {
     
+}
+
+.cbutton {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    border: none;
+    background: none;
+    color: #286aab;
+    font-size: 1.4em;
+    overflow: hidden;
+    -webkit-transition: color 0.7s;
+    transition: color 0.7s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.cbutton.cbutton--click,
+.cbutton:focus {
+    outline: none;
+    color: rgba(80, 177, 208, 1);;
+}
+
+.cbutton__icon {
+    display: block;
+}
+
+.cbutton__text {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cbutton::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -35px 0 0 -35px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    content: '';
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cbutton--effect-tamara::after {
+    box-shadow: 0 0 0 3px rgba(40, 106, 171, 0.5);
+}
+
+.cbutton--effect-tamara.cbutton--click::after {
+    -webkit-animation: anim-effect-tamara 0.5s ease-out forwards;
+    animation: anim-effect-tamara 0.5s ease-out forwards;
+}
+
+@-webkit-keyframes anim-effect-tamara {
+    0% {
+        box-shadow: 0 0 0 3px rgba(111,148,182,0.3);
+        opacity: 1;
+        -webkit-transform: scale3d(0.6, 0.6, 1);
+        transform: scale3d(0.6, 0.6, 1);
+    }
+    100% {
+        box-shadow: 0 0 0 100px rgba(111,148,182,0);
+        opacity: 0;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes anim-effect-tamara {
+    0% {
+        box-shadow: 0 0 0 3px rgba(111,148,182,0.7);
+        opacity: 1;
+        -webkit-transform: scale3d(0.6, 0.6, 1);
+        transform: scale3d(0.6, 0.6, 1);
+    }
+    100% {
+        box-shadow: 0 0 0 90px rgba(111,148,182,0);
+        opacity: 0;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 }

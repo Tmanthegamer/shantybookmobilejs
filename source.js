@@ -35,8 +35,64 @@ var cssBackgroundList   = { '-webkit-background-size' : 'cover',
                             '-o-background-size'      : 'cover',
                             'background-size'         : 'cover'};
 
-$( document ).ready(function() {
+var myAudio;
+var CURRENT_SONG;
+var MAX_SONGS = 24;
+var isPlaying = false;
+var playPause = function() {
+    if( isPlaying ) {
+        myAudio.pause();
+    } 
+    else {
+        myAudio.play();
+    }
+    isPlaying = !isPlaying;
+};
+
+var nextSong = function( el ) {
     
+    if( CURRENT_SONG === MAX_SONGS ) {
+        CURRENT_SONG = 1;
+    } else {
+        CURRENT_SONG++;
+    }
+    
+    var newSrc = '/songs/Snd_'+CURRENT_SONG+'.mp3';
+    myAudio.src = newSrc;
+
+};
+
+var prevSong = function( el ) {
+    
+    if( CURRENT_SONG === 1 ) {
+        CURRENT_SONG = MAX_SONGS;
+    } else {
+        CURRENT_SONG--;
+    }
+    
+    var newSrc = '/songs/Snd_'+CURRENT_SONG+'.mp3';
+    myAudio.src = newSrc;
+};
+
+$( document ).ready(function() {
+    // debugger;
+    // var wavesurfer = WaveSurfer.create({
+    //     container: '#waveform',
+    //     waveColor: 'violet',
+    //     progressColor: 'purple'
+    // });
+    // wavesurfer.load('/songs/Snd_1.mp3');
+    // var slider = document.querySelector('#slider');
+
+    // slider.oninput = function () {
+    //   var zoomLevel = Number(slider.value);
+    //   wavesurfer.zoom(zoomLevel);
+    // };
+    myAudio = document.querySelector('#myAudio');
+    myAudio.src = '/songs/Snd_1.mp3';
+    CURRENT_SONG = 1;
+    myAudio.pause();
+
     $( '.activate' ).click(function( source ) {
         //debugger;
 
@@ -48,7 +104,7 @@ $( document ).ready(function() {
         $( '.activate' ).hide();
         $('#song-container').load('/lyrics/'+songToLoad+'.html', function( response, status, xhr ) {
             var img = songToLoad+'.jpg';
-            debugger;
+            //debugger;
             if ( status == "success" ) {
                 $('#'+songToLoad+"_song").addClass( 'background-cover' );
                 //$('#'+songToLoad+"_song").css('background-image', 'url(pictures/sunset-dancing.png)'); 

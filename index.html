@@ -14,35 +14,35 @@
             </div>
 
             <div class="ise_the_by">
-                <button id="ise_the_by" class="activate">ise_the_by </button>
-                <button id="farewell_to_nova_scotia" class="activate">farewell_to_nova_scotia </button>
-                <button id="barrets_privateers" class="activate">barrets_privateers </button>
-                <button id="what_do_you_do_with_a_drunken_sailor" class="activate">what_do_you_do_with_a_drunken_sailor </button>
-                <button id="leave_her_johnny" class="activate">leave_her_johnny </button>
-                <button id="haul_away_joe" class="activate">haul_away_joe </button>
-                <button id="sante_anno" class="activate">sante_anno </button>
-                <button id="lowlands" class="activate">lowlands </button>
-                <button id="bully_in_the_alley" class="activate">bully_in_the_alley </button>
-                <button id="cheerly_man" class="activate">cheerly_man </button>
-                <button id="storm_along" class="activate">storm_along </button>
-                <button id="high_barbaree" class="activate">high_barbaree </button>
-                <button id="the_fish_of_the_sea" class="activate">the_fish_of_the_sea </button>
-                <button id="spanish_ladies" class="activate">spanish_ladies </button>
-                <button id="beneath_the_black_flag" class="activate">beneath_the_black_flag </button>
-                <button id="running_down_to_cuba" class="activate">running_down_to_cuba </button>
-                <button id="st._brendans_fair_isle" class="activate">st._brendans_fair_isle </button>
-                <button id="captain_kidd" class="activate">captain_kidd </button>
-                <button id="marching_inland" class="activate">marching_inland </button>
-                <button id="yo_ho_yo_ho" class="activate">yo_ho_yo_ho </button>
-                <button id="hoist_the_colours" class="activate">hoist_the_colours </button>
-                <button id="away_away_away" class="activate">away_away_away </button>
-                <button id="sailing_for_adventure" class="activate">sailing_for_adventure </button>
-                <button id="farewell_shanty" class="activate">farewell_shanty </button>
+                <button data-index="1"  id="ise_the_by"                           class="activate">ise_the_by </button>
+                <button data-index="2"  id="farewell_to_nova_scotia"              class="activate">farewell_to_nova_scotia </button>
+                <button data-index="3"  id="barrets_privateers"                   class="activate">barrets_privateers </button>
+                <button data-index="4"  id="what_do_you_do_with_a_drunken_sailor" class="activate">what_do_you_do_with_a_drunken_sailor </button>
+                <button data-index="5"  id="leave_her_johnny"                     class="activate">leave_her_johnny </button>
+                <button data-index="6"  id="haul_away_joe"                        class="activate">haul_away_joe </button>
+                <button data-index="7"  id="sante_anno"                           class="activate">sante_anno </button>
+                <button data-index="8"  id="lowlands"                             class="activate">lowlands </button>
+                <button data-index="9"  id="bully_in_the_alley"                   class="activate">bully_in_the_alley </button>
+                <button data-index="10" id="cheerly_man"                          class="activate">cheerly_man </button>
+                <button data-index="11" id="storm_along"                          class="activate">storm_along </button>
+                <button data-index="12" id="high_barbaree"                        class="activate">high_barbaree </button>
+                <button data-index="13" id="the_fish_of_the_sea"                  class="activate">the_fish_of_the_sea </button>
+                <button data-index="14" id="spanish_ladies"                       class="activate">spanish_ladies </button>
+                <button data-index="15" id="beneath_the_black_flag"               class="activate">beneath_the_black_flag </button>
+                <button data-index="16" id="running_down_to_cuba"                 class="activate">running_down_to_cuba </button>
+                <button data-index="17" id="st._brendans_fair_isle"               class="activate">st._brendans_fair_isle </button>
+                <button data-index="18" id="captain_kidd"                         class="activate">captain_kidd </button>
+                <button data-index="19" id="marching_inland"                      class="activate">marching_inland </button>
+                <button data-index="20" id="yo_ho_yo_ho"                          class="activate">yo_ho_yo_ho </button>
+                <button data-index="21" id="hoist_the_colours"                    class="activate">hoist_the_colours </button>
+                <button data-index="22" id="away_away_away"                       class="activate">away_away_away </button>
+                <button data-index="23" id="sailing_for_adventure"                class="activate">sailing_for_adventure </button>
+                <button data-index="24" id="farewell_shanty"                      class="activate">farewell_shanty </button>
 
             </div>
 
             <div class="action-bar">
-                <audio controls id="myAudio" autoplay style="display:none;"></audio>
+                <audio controls id="myAudio" onended="songFinished()" autoplay style="display:none;"></audio>
                 <button class="cbutton cbutton--effect-tamara" onclick="prevSong(this)">
                     <i class="cbutton__icon fa fa-fw fa-step-backward"></i>
                 </button>

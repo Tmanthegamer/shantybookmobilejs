@@ -15,7 +15,7 @@ var SONGS = [
              { name:'spanish_ladies',                       lyrics: 'spanish_ladies.html',                       mp3: 'Snd_14.mp3'},
              { name:'beneath_the_black_flag',               lyrics: 'beneath_the_black_flag.html',               mp3: 'Snd_15.mp3'},
              { name:'running_down_to_cuba',                 lyrics: 'running_down_to_cuba.html',                 mp3: 'Snd_16.mp3'},
-             { name:'st_brendans_fair_isle',               lyrics: 'st_brendans_fair_isle.html',               mp3: 'Snd_17.mp3'},
+             { name:'st_brendans_fair_isle',                lyrics: 'st_brendans_fair_isle.html',                mp3: 'Snd_17.mp3'},
              { name:'captain_kidd',                         lyrics: 'captain_kidd.html',                         mp3: 'Snd_18.mp3'},
              { name:'marching_inland',                      lyrics: 'marching_inland.html',                      mp3: 'Snd_19.mp3'},
              { name:'yo_ho_yo_ho',                          lyrics: 'yo_ho_yo_ho.html',                          mp3: 'Snd_20.mp3'},
@@ -56,10 +56,12 @@ var nextSong = function( el ) {
     } else {
         CURRENT_SONG++;
     }
-    
     var newSrc = '/songs/Snd_'+CURRENT_SONG+'.mp3';
     myAudio.src = newSrc;
+    myAudio.pause();
+    isPlaying = false;
 
+    loadLyrics( CURRENT_SONG );
 };
 
 var prevSong = function( el ) {
@@ -72,43 +74,55 @@ var prevSong = function( el ) {
     
     var newSrc = '/songs/Snd_'+CURRENT_SONG+'.mp3';
     myAudio.src = newSrc;
+    myAudio.pause();
+    isPlaying = false;
+
+    loadLyrics( CURRENT_SONG );
+};
+
+var loadLyrics = function( index ) {
+    let songToLoad = SONGS[ index-1 ].name;
+    
+    $('#song-container').load('/lyrics/'+songToLoad+'.html', function( response, status, xhr ) {
+        //var img = songToLoad+'.jpg';
+        if ( status == "success" ) {
+            $('#'+songToLoad+"_song").addClass( 'background-cover' );
+            $('#'+songToLoad+"_song").css('background-image', 'url(/pictures/ise_the_by.jpg)'); 
+            //$('#'+songToLoad+"_song").css('background-image', 'url(pictures/'+img+')'); 
+        }
+    });
+};
+
+var songFinished = function() {
+    isPlaying = false;
 };
 
 $( document ).ready(function() {
-    // debugger;
-    // var wavesurfer = WaveSurfer.create({
-    //     container: '#waveform',
-    //     waveColor: 'violet',
-    //     progressColor: 'purple'
-    // });
-    // wavesurfer.load('/songs/Snd_1.mp3');
-    // var slider = document.querySelector('#slider');
 
-    // slider.oninput = function () {
-    //   var zoomLevel = Number(slider.value);
-    //   wavesurfer.zoom(zoomLevel);
-    // };
     myAudio = document.querySelector('#myAudio');
-    myAudio.src = '/songs/Snd_1.mp3';
-    CURRENT_SONG = 1;
-    myAudio.pause();
+    // myAudio.src = '/songs/Snd_1.mp3';
+    // CURRENT_SONG = 1;
+    // myAudio.pause();
 
     $( '.activate' ).click(function( source ) {
         //debugger;
 
         var buttonId = source.currentTarget.id;
-        console.log( 'activate hit', buttonId );
+        var index = source.currentTarget.dataset.index;
+
+        CURRENT_SONG = parseInt( index );
+        myAudio.src = '/songs/Snd_'+CURRENT_SONG+'.mp3';
+        myAudio.pause();
 
         var songToLoad = this.id;
-        //$( '#'+buttonId).hide();
+
         $( '.activate' ).hide();
         $('#song-container').load('/lyrics/'+songToLoad+'.html', function( response, status, xhr ) {
             var img = songToLoad+'.jpg';
             //debugger;
             if ( status == "success" ) {
-                $('#'+songToLoad+"_song").addClass( 'background-cover' );
-                //$('#'+songToLoad+"_song").css('background-image', 'url(pictures/sunset-dancing.png)'); 
-                $('#'+songToLoad+"_song").css('background-image', 'url(pictures/'+img+')'); 
+                $("#song-container").addClass( 'background-cover' );
+                $("#song-container").css('background-image', 'url(/pictures/ise_the_by.jpg)'); 
             }
         });
 

@@ -82,15 +82,18 @@ var prevSong = function( el ) {
 
 var loadLyrics = function( index ) {
     let songToLoad = SONGS[ index-1 ].name;
-    
-    $('#song-container').load('/lyrics/'+songToLoad+'.html', function( response, status, xhr ) {
-        //var img = songToLoad+'.jpg';
-        if ( status == "success" ) {
-            $('#'+songToLoad+"_song").addClass( 'background-cover' );
-            $('#'+songToLoad+"_song").css('background-image', 'url(/pictures/ise_the_by.jpg)'); 
-            //$('#'+songToLoad+"_song").css('background-image', 'url(pictures/'+img+')'); 
-        }
-    });
+    songToLoad = "#" + songToLoad + "_song";
+    let template = $( songToLoad ).html();
+    $("#song-container").html( template );
+    $("#song-container").animate({ scrollTop: 0 }, "fast");
+    // $('#song-container').load('/lyrics/'+songToLoad+'.html', function( response, status, xhr ) {
+    //     //var img = songToLoad+'.jpg';
+    //     if ( status == "success" ) {
+    //         $('#'+songToLoad+"_song").addClass( 'background-cover' );
+    //         $('#'+songToLoad+"_song").css('background-image', 'url(/pictures/ise_the_by.jpg)'); 
+    //         //$('#'+songToLoad+"_song").css('background-image', 'url(pictures/'+img+')'); 
+    //     }
+    // });
 };
 
 var songFinished = function() {
@@ -113,18 +116,23 @@ $( document ).ready(function() {
         CURRENT_SONG = parseInt( index );
         myAudio.src = '/songs/Snd_'+CURRENT_SONG+'.mp3';
         myAudio.pause();
-
-        var songToLoad = this.id;
-
+        
         $( '.activate' ).hide();
-        $('#song-container').load('/lyrics/'+songToLoad+'.html', function( response, status, xhr ) {
-            var img = songToLoad+'.jpg';
-            //debugger;
-            if ( status == "success" ) {
-                $("#song-container").addClass( 'background-cover' );
-                $("#song-container").css('background-image', 'url(/pictures/ise_the_by.jpg)'); 
-            }
-        });
+        var songToLoad = "#" + this.id + "_song";
+        var template = $( songToLoad ).html();
+
+        $("#song-container").addClass( 'background-cover' );
+        $("#song-container").css('background-image', 'url(/pictures/ise_the_by.jpg)'); 
+        $("#song-container").html( template );
+        $("#song-container").show();
+        
+        // $('#song-container').load('/lyrics/'+songToLoad+'.html', function( response, status, xhr ) {
+        //     var img = songToLoad+'.jpg';
+        //     //debugger;
+        //     if ( status == "success" ) {
+        //     }
+        // });
+
 
     });
     // var MAX_HEIGHT  = $(window).height();

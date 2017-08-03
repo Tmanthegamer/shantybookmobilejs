@@ -9,8 +9,7 @@
     <meta name="viewport" content="user-scalable=no" />
     <body>
         <div class="content">
-            
-            <div id="song-container">
+            <div id="song-container" style="display:none;" class="song">
             </div>
 
             <div class="ise_the_by">
@@ -42,15 +41,15 @@
             </div>
 
             <div class="action-bar">
-                <audio controls id="myAudio" onended="songFinished()" autoplay style="display:none;"></audio>
-                <button class="cbutton cbutton--effect-tamara" onclick="prevSong(this)">
-                    <i class="cbutton__icon fa fa-fw fa-step-backward"></i>
+                <audio controls id="myAudio" onended="songFinished()" autoplay type="audio/mpeg" style="display:none;"></audio>
+                <button class="cbutton cbutton--effect-tamara">
+                    <a href="#nav-top" onclick="prevSong(this)"><i class="cbutton__icon fa fa-fw fa-step-backward"></i></a>
                 </button>
-                <button class="cbutton cbutton--effect-tamara" onclick="playPause(this)">
-                    <i class="cbutton__icon fa fa-fw fa-play"></i>
+                <button class="cbutton cbutton--effect-tamara" >
+                    <a href="#nav-top" onclick="playPause(this)"><i class="cbutton__icon fa fa-fw fa-play"></i></a>
                 </button>
-                <button class="cbutton cbutton--effect-tamara" onclick="nextSong(this)">
-                    <i class="cbutton__icon fa fa-fw fa-step-forward"></i>
+                <button class="cbutton cbutton--effect-tamara" >
+                    <a href="#nav-top" onclick="nextSong(this)"><i class="cbutton__icon fa fa-fw fa-step-forward"></i></a>
                 </button>
             </div>
         </div>
@@ -100,11 +99,1499 @@
 
             })();
         </script>
-    <!-- <p class="cicular-bold">Bold</p>
-    <p class="cicular-book">Book</p>
-    <p class="cicular-bookI">Book Italic</p>
-    <p class="cicular-medium">Medium</p>
-    <p class="cicular-mediumI">Medium Italic</p> -->
 
-                                   
+    <div style="display:none;">
+        <div id="away_away_away_song" class="song">
+    
+    <h2 class="title">Away, Away, Away</h2>
+
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">Come ye daring young buccaneers, </p>
+        <p class="line">come and capture your treasure!  </p>
+        <p class="line">Sail with us on the seven seas,  </p>
+        <p class="line">And find your richest reward!    </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">Live the dream and you’ll find a world,  </p>
+        <p class="line">filled with gold beyond measure,         </p>
+        <p class="line">Bid farewell to your landlocked friends, </p>
+        <p class="line">and matey climb aboard!                  </p>
+    </div>
+    
+    <p class="chorus">Chorus</p>
+
+    <div class="stanza chorus">
+        <p class="line">Away, away, away, away               </p>
+        <p class="line">Come live the life, the life we love </p>
+        <p class="line">Away, away, away, away               </p>
+        <p class="line">Adventure’s waiting for you!         </p>
+        <p class="line">Come ye brave young buccaneers       </p>
+        <p class="line">Come live the life, the pirates life </p>
+        <p class="line">Come on, Come on, Come on, Come on   </p>
+        <p class="line">Come live the life we love!          </p>
+        <p class="line">Waving a sword in each hand          </p>
+        <p class="line">We’re off to far away lands          </p>
+        <p class="line">Away, away, away, away               </p>
+        <p class="line">Come the life we love                </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">When you see Tortuga’s coast,                </p>
+        <p class="line">Oi yer gunna be smilin’                      </p>
+        <p class="line">The songs, the fights, the days, the nights, </p>
+        <p class="line">There’s so much to behold!                   </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">Sail with us on a western wind,         </p>
+        <p class="line">see the beautiful islands!              </p>
+        <p class="line">Sail with us and we’ll cross the earth, </p>
+        <p class="line">In search of silver and gold!           </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza chorus">
+        <p class="line">Come ye brave young buccaneers       </p>
+        <p class="line">Come live the life, the pirates life </p>
+        <p class="line">Come on, Come on, Come on, Come on   </p>
+        <p class="line">Come live the life we love!          </p>
+        <p class="line">Waving a sword in each hand          </p>
+        <p class="line">We’re off to far away lands          </p>
+        <p class="line">Away, away, away, away               </p>
+        <p class="line">Come the life we love                </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">A Pirate fights for his treasure mate, be ready with your cutlass,  </p> 
+        <p class="line">But then there is the party,                                        </p>
+        <p class="line">that’s the part he likes the best!                                  </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">When we sail into your port,                </p>
+        <p class="line">heros you will be boys/girls!               </p>
+        <p class="line">A patch on yer eye, and a nice feather too! </p>
+        <p class="line">A Pirate is what you will be!               </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+</div><div id="barrets_privateers_song" class="song">
+
+    <h2 class="title">Barrett’s Privateers</h2>
+
+    <div class="stanza">
+        <p class="line">Oh, the year was 1778,                     </p>
+        <p class="line chorus">How I wish I was in Sherbrooke Now! </p>
+        <p class="line">A letter of marque came from the king,     </p>
+        <p class="line">To the scummiest vessel I'd ever seen,     </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza chorus">
+        <p class="line">God DARN it all!                                  </p> 
+        <p class="line">I was told we'd cruise the seas for American gold </p>
+        <p class="line">We'd fire no guns-shed no tears                   </p>  
+        <p class="line">Now I'm a broken man on a Halifax pier            </p> 
+        <p class="line">The last of Barrett's Privateers.                 </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">Oh, Elcid Barrett cried the town          </p>
+        <p class="line chorus">How I wish I was in Sherbrooke Now!</p>
+        <p class="line">For twenty brave men all fishermen who    </p>
+        <p class="line">Would make for him the Antelope's crew    </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">The Antelope sloop was a sickening sight,               </p>
+        <p class="line chorus">How I wish I was in Sherbrooke Now!              </p>
+        <p class="line">She'd a list to the port and and her sails in rags      </p>
+        <p class="line">And the cook in scuppers with the staggers and the jags </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">Then at length we stood two cables away,    </p>
+        <p class="line chorus">How I wish I was in Sherbrooke Now!  </p>
+        <p class="line">Our cracked four pounders made an awful din </p>
+        <p class="line">But with one fat ball the Yank stove us in  </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">The Antelope shook and pitched on her side, </p>
+        <p class="line chorus">How I wish I was in Sherbrooke Now!  </p>
+        <p class="line">Barrett was smashed like a bowl of eggs     </p>
+        <p class="line">And the Main trunk carried off both me legs </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">So here I lay in my 23rd year,             </p>
+        <p class="line chorus">How I wish I was in Sherbrooke Now! </p>
+        <p class="line">It's been 6 years since we sailed away     </p>
+        <p class="line">And I just made Halifax yesterday          </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+</div><div id="beneath_the_black_flag_song" class="song">
+
+    <h2 class="title">Beneath the Black Flag</h2>
+
+    <div class="stanza">
+        <p class="line">Out on the endless ocean                                  </p> 
+        <p class="line">We tear along the gales                                   </p>
+        <p class="line">With rum inside our bellies warm and freedom in our sails </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">A wayward bunch of scoundrels                                </p> 
+        <p class="line">Assassins, thieves and slaves                                </p>
+        <p class="line">The rich and blue bloods fear us when we hunt upon the waves </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">And when you see it coming                               </p> 
+        <p class="line">That flag of baleful black                               </p>
+        <p class="line">No point in turning tail there’s no escaping our attack! </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza chorus">
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">We row beneath the black flag A rollickin’ we    </p>
+        <p class="line">We own the sea &amp; sky                         </p>
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">We row beneath the black flag A rollickin’ we go!</p>
+        <p class="line">We bleed the kingdoms dry!!                      </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">Defy the odds against us                         </p> 
+        <p class="line">A pirate knows no fear                           </p>
+        <p class="line">Our steel is ready and our retribution is severe </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">We plunder from the greedy                                     </p> 
+        <p class="line">With blood and with our steel                                  </p>
+        <p class="line">We rob the rich of their Ill-gotten gain &amp; make them kneel </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">Behold the oceans’s mysteries                      </p> 
+        <p class="line">The tales of ancient deeds                         </p>
+        <p class="line">We follow in the footsteps of a silent secret creed</p>
+    </div>
+
+    <p class="chorus">Come On!!!</p>
+    
+    <div class="stanza chorus">
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">We row beneath the black flag A rollickin’ we    </p>
+        <p class="line">We own the sea &amp; sky                         </p>
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">We row beneath the black flag A rollickin’ we go!</p>
+        <p class="line">We bleed the kingdoms dry!!                      </p>
+    </div>
+    
+    <p class="line">Come On!!!</p>
+    
+    <div class="stanza chorus">
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">We row beneath the black flag A rollickin’ we    </p>
+        <p class="line">We own the sea &amp; sky                         </p>
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">YO-HO!                                           </p>
+        <p class="line">We row beneath the black flag A rollickin’ we go!</p>
+        <p class="line">We bleed the kingdoms dry!!                      </p>
+        <p class="line">Huzzah!!!                                        </p>
+    </div>
+    
+</div><div id="bully_in_the_alley_song" class="song">
+    <h2 class="title">Bully in the Alley</h2>
+
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza chorus">
+        <p class="line">Help me Bob, I'm bully in the alley, </p> 
+        <p class="line">Wey hey eh ey, Bully in the alley    </p>
+        <p class="line">Help me Bob, I'm bully in the alley, </p>  
+        <p class="line">Bully down in Shinbone al            </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">Sally is a girl that I loved dearly,     </p>
+        <p class="line chorus">Wey hey eh ey, Bully in the alley </p>
+        <p class="line">Sally is the girl that I spliced nearly, </p>
+        <p class="line chorus">Bully down in Shinbone al         </p>
+    </div>
+       
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">For seven long years I courted little Sally, </p>
+        <p class="line chorus">Wey hey eh ey, Bully in the alley     </p>
+        <p class="line">All She did was dilly and dally,             </p>
+        <p class="line chorus">Bully down in Shinbone al             </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">I left my Sal, I went-a-sailing          </p>
+        <p class="line chorus">Wey hey eh ey, Bully in the alley </p>
+        <p class="line">Signed on a big ship, I went whaling     </p>
+        <p class="line chorus">Bully down in Shinbone al         </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">If ever I get back, I'll marry little Sally, </p>
+        <p class="line chorus">Wey hey eh ey, Bully in the alley     </p>
+        <p class="line">Have six kids and live in Shinbone alley,    </p>
+        <p class="line chorus">Bully down in Shinbone al             </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">I thought I heard the old man saying,    </p>
+        <p class="line chorus">Wey hey eh ey, Bully in the alley </p>
+        <p class="line">One more pull and we're belaying,        </p>
+        <p class="line chorus">Bully down in Shinbone al         </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza chorus">
+        <p class="line">Help me Bob, I'm bully in the alley,     </p> 
+        <p class="line chorus">Wey hey eh ey, Bully in the alley </p>
+        <p class="line">Help me Bob, I'm bully in the alley,     </p>  
+        <p class="line chorus">Bully down in Shinbone al         </p>
+    </div>
+    
+</div><div id="captain_kidd_song" class="song">
+    
+    <h2 class="title">Captain Kidd</h2>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza chorus">
+        <p class="line non-chorus">My name is Captain Kidd      </p> 
+        <p class="line">As I sailed, as I sailed,               </p>
+        <p class="line">Oh my name is Captain Kidd as I sailed, </p>  
+        <p class="line">My name is Captain Kidd                 </p>
+        <p class="line">And God's laws I did forbid,            </p>  
+        <p class="line">And most wickedly I did as I sailed     </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">My father taught me well                </p> 
+        <p class="line">To shun the gates of hell,              </p>
+        <p class="line">But against him I rebelled as I sailed, </p>  
+        <p class="line">He shoved a bible in my hand But I      </p>
+        <p class="line">left it in the sand                     </p>  
+        <p class="line">And I pulled away from land,            </p> 
+        <p class="line">As I sailed                             </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">I murdered William Moore                  </p> 
+        <p class="line">And I left him in his gore                </p>
+        <p class="line">Twenty leagues away from shore            </p>  
+        <p class="line">As I sailed,                              </p>
+        <p class="line">And being crueler still, the gunner I did </p>  
+        <p class="line">All his precious blood did spill,         </p> 
+        <p class="line">As I sailed,                              </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">I was sick and nigh to death, </p> 
+        <p class="line">And I vowed at every breath,  </p>
+        <p class="line">Oh to walk in wisdom's path,  </p>  
+        <p class="line">As I sailed                   </p>
+        <p class="line">But my repentance lasted not, </p>  
+        <p class="line">My vows I soon forgot,        </p> 
+        <p class="line">Oh damnation is my lot,       </p>
+        <p class="line">As I sailed.                  </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">To the execution dock             </p> 
+        <p class="line">Lay my head upon the block,       </p>
+        <p class="line">Laws no more I'll mock as I sail, </p>  
+        <p class="line">So take warning here and heed     </p>
+        <p class="line">To shun bad company               </p>  
+        <p class="line">Or you'll wind up just like me    </p> 
+        <p class="line">As I sailed                       </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza chorus">
+        <p class="line">My name is Captain Kidd As I sailed, as I sailed,             </p>  
+        <p class="line">Oh my name is Captain Kidd as I sailed,                       </p>
+        <p class="line">My name is Captain Kidd And God's laws I did forbid, And most </p>  
+        <p class="line">wickedly I did as I sailed                                    </p>
+        <p class="line non-chorus">And most wickedly I did as I sailed                </p> 
+    </div>
+    
+    <p class="chorus">(End)</p>
+
+</div><div id="cheerly_man_song" class="song">
+
+    <h2 class="title">Cheer'ly Man</h2>
+
+    <div class="stanza">
+        <p class="line">Oh, Nancy Dawson, Hi-oh!   </p>             
+        <p class="chorus">Cheer’ly, man!           </p>     
+        <p class="line">She’s got a notion, Hi-oh! </p>             
+        <p class="chorus">Cheer’ly, man!           </p>     
+        <p class="line">For the ol’ Bosun, Hi-oh!  </p>             
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza chorus">
+        <p class="line">Cheer’ly, man, O! </p>   
+        <p class="line">Haulee, Hi-oh,    </p>  
+        <p class="line">Cheer’ly, man.    </p>  
+    </div>
+
+    <div class="stanza">
+        <p class="line">Oh, Sally Racket, Hi-oh!         </p>
+        <p class="chorus">Cheer’ly, man!                 </p>
+        <p class="line">Pawned my best jacket, Hi-oh!    </p>
+        <p class="chorus">Cheer’ly, man!                 </p>
+        <p class="line">And sold pawn the ticket, Hi-oh! </p>
+    </div>
+    
+    <p class="chorus">(Chorus)
+    
+    <div class="stanza">
+        <p class="line">Oh, Kitty Carson, Hi-oh!  </p>               
+        <p class="chorus">Cheer’ly, man!          </p>       
+        <p class="line">Jitted the parson, Hi-oh! </p>               
+        <p class="chorus">Cheer’ly, man!          </p>       
+        <p class="line">Married a mason, Hi-oh!   </p>           
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">Oh, Betsy Baker, Hi-oh!    </p>         
+        <p class="chorus">Cheer’ly, man!           </p>     
+        <p class="line">Lived in Long Acre, Hi-oh! </p>             
+        <p class="chorus">Cheer’ly, man!           </p>     
+        <p class="line">Married a Quaker, Hi-oh!   </p>             
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">A strong pull for Mrs. Bell, Hi-Oh        </p>
+        <p class="chorus">Cheer'ly man!                           </p>
+        <p class="line">Who likes a lark right well, Hi-Oh        </p>
+        <p class="chorus">Cheer'ly man!                           </p>
+        <p class="line">And, what's more, will never tell, Hi-Oh! </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">Oh, Polly Riddle, Hi-oh!         </p>
+        <p class="chorus">Cheer’ly, man!                 </p>
+        <p class="line">Broke her new fiddle, Hi-oh!     </p>
+        <p class="chorus">Cheer’ly, man!                 </p>
+        <p class="line">Right through the middle, Hi-oh! </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+
+</div><div id="farewell_shanty_song" class="song">
+
+    <h2 class="title">Farewell Shanty (Padstow’s)</h2>
+
+    <div class="stanza chorus">
+        <p class="line">It's time to go now,   </p> 
+        <p class="line">Haul away your anchor, </p>
+        <p class="line">Haul away your anchor, </p>  
+        <p class="line">It's our sailing time. </p>
+    </div>
+
+    <div class="stanza chorus">
+        <p class="line"> Get some sail upon her,  </p> 
+        <p class="line"> Haul away your halyards, </p>
+        <p class="line"> Haul away your halyards. </p>  
+        <p class="line"> It's our sailing time.   </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">Get her on her course now, </p> 
+        <p class="line">Haul away your foresheets, </p>
+        <p class="line">Haul away your foresheets, </p>  
+        <p class="line">It's our sailing time.     </p>
+    </div>
+   
+    <div class="stanza chorus">
+        <p class="line"> Waves are surging under, </p> 
+        <p class="line"> Haul away down Channel,  </p>
+        <p class="line"> Haul away down Channel,  </p>  
+        <p class="line"> On the evening tide.     </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">When your sailing's over, </p> 
+        <p class="line">Haul away for Heaven,     </p>
+        <p class="line">Haul away for Heaven,     </p>  
+        <p class="line">God be by your side.      </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">It is time to go now,  </p> 
+        <p class="line">Haul away your anchor, </p>
+        <p class="line">Haul away your anchor, </p>  
+        <p class="line">It's our sailing time. </p>
+    </div>
+
+</div><div id="farewell_to_nova_scotia_song" class="song">
+
+    <h2 class="title">Farewell to Nova Scotia</h2>
+
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza chorus">
+        <p class="line">Farewell to Nova Scotia, you sea-bound coast</p> 
+        <p class="line">Let your mountains dark and dreary be</p>
+        <p class="line">For when I am far away on the briny ocean tossed 
+        <p class="line">Will you ever heave a sigh and a wish for me?</p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">The sun was setting in the west         </p>
+        <p class="line">The birds were singing on every tree    </p>
+        <p class="line">All nature seemed inclined for to rest  </p>
+        <p class="line">But still there was no rest for me      </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">I grieve to leave my native land              </p>
+        <p class="line">I grieve to leave my comrades all             </p>
+        <p class="line">And my parents whom I held so dear            </p>
+        <p class="line">And the bonnie, bonnie lassie that I do adore </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">The drums they do beat and the wars do alarm        </p>
+        <p class="line">The Captain calls, we must obey                     </p>
+        <p class="line">So farewell, farewell to Nova Scotia’s charms       </p>
+        <p class="line">For it’s early in the morning and I am far far away </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">I have three brothers and they are at rest     </p>
+        <p class="line">Their arms are folded on their breast          </p>
+        <p class="line">But a poor simple sailor just like me          </p>
+        <p class="line">Must be tossed and driven on the dark blue sea </p>
+    </div>
+    
+    <p class="chorus">(Chorus End)</p>
+    
+</div><div id="haul_away_joe_song" class="song">
+
+    <h2 class="title">Haul Away Joe</h2>
+
+    <div class="stanza">
+        <p class="line">When I was a little boy so my mother told me, <span class="chorus">(to me)</span></p>
+        <p class="line chorus">Way haul away, we'll haul away Joe</p>
+        <p class="line">That if I did not kiss the girls,</p>
+        <p class="line">my lips would all grow mouldy, <span class="chorus">(to me)</span></p>
+        <p class="line chorus">Way haul away, we'll haul away Joe</p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza chorus">
+        <p class="line">Way haul away, we're bound for better weather, <span class="chorus">(to me)</span></p>
+        <p class="line">Way haul away, we'll haul away Joe</p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">First I met a Yankee girl and she was dumb and lazy, <span class="chorus">(to me)</span></p>
+        <p class="line chorus">Way haul away, we'll haul away Joe</p>
+        <p class="line">Then I met an Irish girl, she damn near drove me crazy, <span class="chorus">(to me)</span></p>
+        <p class="line chorus">Way haul away, we'll haul away Joe</p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">King Louis was the king of France before the revolution, <span class="chorus">(to me)</span></p>
+        <p class="line chorus">Way haul away, we'll haul away Joe</p>
+        <p class="line">And then he got his head cut off,</p>
+        <p class="line">it spoiled his constitution, <span class="chorus">(to me)</span></p>
+        <p class="line chorus">Way haul away, we'll haul away Joe</p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza chorus">
+        <p class="line">Way haul away, the good ship is a rolling,<span class="chorus">(to me)</span></p>
+        <p class="line">Way haul away, we'll haul away Joe</p>
+    </div>
+    
+    <p class="chorus">(End)</p>
+
+</div><div id="high_barbaree_song" class="song">
+
+    <h2 class="title">High Barbaree</h2>
+    
+    <div class="stanza">
+        <p class="line">There were two lofty ships from old England came</p>
+        <p class="line chorus">Blow high, blow low, and so sail we</p>
+        <p class="line">One was the Prince of Luther and the other Prince of Wales</p>
+        <p class="line chorus">Sailin’ down the coast of High Barbary</p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">"Aloft there, aloft there" our jolly bosun cried</p>
+        <p class="line chorus">Blow high, blow low, and so sail we</p>
+        <p class="line">"Look ahead, look astern, Look to weather an' a-lee"</p>
+        <p class="line chorus">Sailin’ down the coast of High Barbary</p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">"There's naught upon the stern, sir, there's naught upon our lee</p>
+        <p class="line chorus">Blow high, blow low, and so sail we</p>
+        <p class="line">But there's a lofty ship to wind'ard an' she's sailin' fast and free"</p>
+        <p class="line chorus">Sailin’ down the coast of High Barbary</p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">"Oh hail her, oh hail her" our gallant captain cried</p>
+        <p class="line chorus">Blow high, blow low, and so sail we</p>
+        <p class="line">"Are you a man-o-war or a privateer?" cried he</p>
+        <p class="line chorus">Sailin’ down the coast of High Barbary</p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">"Oh, I'm not a man-o-war nor privateer," said he</p>
+        <p class="line chorus">Blow high, blow low, and so sail we</p>
+        <p class="line">"But I am salt sea pirate all a-looking for me fee"</p>
+        <p class="line chorus">Sailin’ down the coast of High Barbary</p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">For Broadside, for broadside a long time we lay</p>
+        <p class="line chorus">Blow high, blow low, and so sail we</p>
+        <p class="line">Til at last the Prince of Luther shot the pirate's mast away</p>
+        <p class="line chorus">Sailin’ down the coast of High Barbary</p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">"Oh quarter, oh quarter" those pirates they did cry</p>
+        <p class="line chorus">Blow high, blow low, and so sail we</p>
+        <p class="line">But the quarter that we gave them was we sank 'em in the sea</p>
+        <p class="line chorus">Sailin’ down the coast of High Barbary</p>
+    </div> 
+    
+</div><div id="hoist_the_colours_song" class="song">
+
+    <h2 class="title">Hoist The Colours</h2>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza chorus">
+        <p class="line">Yo Ho, haul together           </p> 
+        <p class="line">Hoist the Colours High         </p>
+        <p class="line">Heave Ho, Thieves and Beggars, </p>  
+        <p class="line">Never Shall we Die             </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">The King and his men stole </p>
+        <p class="line">the Queen from her bed     </p>
+        <p class="line">and bound her in her bones </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">The seas be ours         </p>
+        <p class="line">and by the powers        </p>
+        <p class="line">where we will we'll roam </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>  
+    
+    <div class="stanza">
+        <p class="line">Some men have died         </p>
+        <p class="line">and some are alive         </p>
+        <p class="line">and others sail on the sea </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">with the keys to the cage     </p>
+        <p class="line">and the Devil to pay          </p>
+        <p class="line">we lay to the fiddler's green </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>  
+    
+    <div class="stanza">
+        <p class="line">The bell has been raised (ring bell) </p>
+        <p class="line">from it's watery grave...            </p>
+        <p class="line">Do you hear it's sepulchral tone?    </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">We are a call to all            </p>
+        <p class="line">pay head the squall             </p>
+        <p class="line">and turn your sail towards home </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>  
+
+</div><div id="ise_the_by_song" class="song">
+
+    <h2 class="title">I'se the B'y</h2>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza chorus">
+        <p class="line">I'se the b'y that builds the boat, And </p> 
+        <p class="line">I'se the b'y that sails her.           </p>
+        <p class="line">I'se the b'y that catches the fish     </p>  
+        <p class="line">And takes it home to Lizer             </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">Sods and rinds to cover yer flake, </p>
+        <p class="line">Cake and tea for supper,           </p>
+        <p class="line">Codfish in the spring of the year  </p>
+        <p class="line">Fried in maggoty butter            </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+        
+    <div class="stanza">
+        <p class="line">I don't want your maggoty fish,</p>
+        <p class="line">That's no good for winter (Heave)</p>
+        <p class="line">I can buy as good as that</p>
+        <p class="line">Down in Steveston Harbour</p>
+    </div>
+    
+
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">I took Liza to a dance,</p>
+        <p class="line">And faith but she could travel.)</p>
+        <p class="line">Ev'ry step that she did take</p>
+        <p class="line">Was up to her knees in gravel</p>
+    </div>
+    
+    <p class="chorus">(Chorus End)</p>
+
+</div><div id="leave_her_johnny_song" class="song">
+
+    <h2 class="title">Leave Her Johnny</h2>
+
+    <div class="stanza">
+        <p class="line">       Well I thought I heard the old man say </p>
+        <p class="line chorus">Leave her, Johnny, Leave her           </p>
+        <p class="line">       You can go ashore and take your pay,   </p>
+        <p class="line chorus">And it's time for us to leave her      </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza chorus">
+        <p class="line">Leave her, Johnny, Leave her  </p> 
+        <p class="line">Woah…                         </p>  
+        <p class="line">Leave her, Johnny, Leave her  </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">When the voyage is done,          </p> 
+        <p class="line">and the winds don't blow          </p>  
+        <p class="line">And It's time for us to leave her </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">       The winds were foul, and the work was hard,         </p>
+        <p class="line chorus">Leave her, Johnny, Leave her                        </p>
+        <p class="line">       From the Gray's Harbour Docks to the Steveston Yard </p>
+        <p class="line chorus">And its time for us to leave her                    </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">       The winds were foul, and the ship was slow </p>
+        <p class="line chorus">Leave her, Johnny, Leave her               </p>
+        <p class="line">       The grub was bad, and the wages low        </p>
+        <p class="line chorus">And it's time for us to leave her          </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">       You can make her mast and pack your gear       </p>
+        <p class="line chorus">Leave her, Johnny, Leave her                   </p>
+        <p class="line">       You can leave her moored at the Steveston pier </p>
+        <p class="line chorus">And it's time for us to leave her              </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">       The sails are furled and the work is done, </p>
+        <p class="line chorus">Leave her, Johnny, Leave her               </p>
+        <p class="line">       We will go ashore and have our fun         </p>
+        <p class="line chorus">And its time for us to leave her           </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza chorus">
+        <p class="line">The wind were foul, and the trip was long </p> 
+        <p class="line">Leave her, Johnny, Leave her              </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">But before we go       </p> 
+        <p class="line">we will sing this song </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">And it's time for us to leave her </p> 
+        <p class="line">And it's time for us to leave her </p>
+    </div>
+    
+</div><div id="lowlands_song" class="song">
+
+    <h2 class="title">Lowlands</h2>
+
+    <div class="stanza">
+        <p class="line">       I dreamed a dream the other night,     </p>
+        <p class="line chorus">Lowlands, Lowlands, away, me John      </p>
+        <p class="line">       My love she came all dressed in white, </p>
+        <p class="line chorus">Lowlands away                          </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">       I dreamed my love came in my sleep,    </p>
+        <p class="line chorus">Lowlands, Lowlands, away, me John      </p>
+        <p class="line">       Her cheeks were wet, her eyes did weep </p>
+        <p class="line chorus">Lowlands away                          </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">       She came to me at my bed-side,            </p>
+        <p class="line chorus">Lowlands, Lowlands, away, me John         </p>
+        <p class="line">       Dressed all in white like some fair bride </p>
+        <p class="line chorus">Lowlands away                             </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">       And bravely in her bosom fair,    </p>
+        <p class="line chorus">Lowlands, Lowlands, away, me John </p>
+        <p class="line">       A red, red rose my love did wear  </p>
+        <p class="line chorus">Lowlands away                     </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">       She made no sound-no word she said, </p>
+        <p class="line chorus">Lowlands, Lowlands, away, me John   </p>
+        <p class="line">       And then I knew my love was dead    </p>
+        <p class="line chorus">Lowlands away                       </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">       I bound the weeper round my head, </p>
+        <p class="line chorus">Lowlands, Lowlands, away, me John </p>
+        <p class="line">       For now I knew my love was dead   </p>
+        <p class="line chorus">Lowlands away                     </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">       She waved her hand-she said goodbye, </p>
+        <p class="line chorus">Lowlands, Lowlands, away, me John    </p>
+        <p class="line">       I wiped the tear from out my eye     </p>
+        <p class="line chorus">Lowlands away                        </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">       And then awoke to hear the cry,      </p>
+        <p class="line chorus">Lowlands, Lowlands, away, me John    </p>
+        <p class="line">       'Oh, watch on deck, oh, watch ahoy!' </p>
+        <p class="line chorus">Lowlands away                        </p>
+    </div>
+
+    <p class="chorus">(End)</p>
+
+</div><div id="marching_inland_song" class="song">
+
+    <h2 class="title">Marching Inland</h2>
+
+    <div class="stanza">
+        <p class="line">Lord Nelson knew the perfect way to cure your 'mal-de-mer', </p>
+        <p class="line">So if you pay attention, his secret I will share, To        </p>
+        <p class="line">any sea-sick sailor he'd give this advice for free:         </p>
+        <p class="line">"If you're feeling sea-sick, sit underneath a tree!"        </p>
+    </div>
+
+    <div class="stanza chorus">
+        <p class="line">I'm marching inland from the shore,                            </p> 
+        <p class="line">Over m' shoulder I'm carrying an oar,                          </p>
+        <p class="line">When someone asks me: "What - is that funny thing you've got?" </p>  
+        <p class="line">Then I know I'll never go to sea no more, no more,             </p>  
+        <p class="line">Then I know I'll never go to sea no more!                      </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">Columbus he set-sail to find out if the world was round,      </p>
+        <p class="line">He kept on sailing to the West until he ran aground,          </p>
+        <p class="line">He thought he'd found The Indies but he'd found the U.S.A., I </p>
+        <p class="line">know some navigators who can still do that today.             </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">Drake he's in his hammock and a thousand miles away,   </p>
+        <p class="line">Grenville's REVENGE is at the bottom of the bay,       </p>
+        <p class="line">Many's the famous sailor never came home from the sea, </p>
+        <p class="line">Just take my advice, Jack, come and follow me.         </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">Sailors take a warning from these men of high renown,     </p>
+        <p class="line">When you leave the ocean and it's time to settle down,    </p>
+        <p class="line">Never cast your anchor less than ninety miles from shore, </p>
+        <p class="line">There'd always be temptation to be off to sea once more.  </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+</div><div id="running_down_to_cuba_song" class="song">
+
+    <h2 class="title">Running down to Cuba</h2>
+ 
+    <div class="stanza">
+        <p class="line">       Running down to Cuba with a load of sugar, </p>
+        <p class="line chorus">Weigh, me boys, to Cuba!                   </p>
+        <p class="line">       Make her run you, lime juice squeezes,     </p>
+        <p class="line chorus">Running down to Cuba                       </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+
+    
+    <div class="stanza chorus">
+        <p class="line">       Weigh, me boys, to Cuba!                                  </p>  
+        <p class="line">       Running down to Cuba                                      </p>
+    
+    <div class="stanza">
+        <p class="line">       O, I got a sister, she's nine feet tall,         </p>
+        <p class="line chorus">Weigh, me boys, to Cuba!                         </p>
+        <p class="line">       Sleeps in the kitchen with her feet in the hall, </p>
+        <p class="line chorus">Running down to Cuba                             </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">       The captain he will trim the sails, </p>
+        <p class="line chorus">Weigh, me boys, to Cuba!            </p>
+        <p class="line">       Winging the water over the rails,   </p>
+        <p class="line chorus">Running down to Cuba                </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p> 
+    
+    <div class="stanza">
+        <p class="line">       Give me a gal can dance Fandango,      </p>
+        <p class="line chorus">Weigh, me boys, to Cuba!               </p>
+        <p class="line">       Round as a melon and sweet as a mango, </p>
+        <p class="line chorus">Running down to Cuba                   </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">       Load this sugar and home-ward go, </p>
+        <p class="line chorus">Weigh, me boys, to Cuba!          </p>
+        <p class="line">       Mister mate, he told me so,       </p>
+        <p class="line chorus">Running down to Cuba              </p>
+    </div>
+    
+    <p class="chorus">(Chorus End)</p>
+    
+</div><div id="sailing_for_adventure_song" class="song">
+    
+    <h2 class="title">Sailing for Adventure</h2>
+
+    <div class="stanza">
+        <p class="line chorus">When the course is laid and the anchor's weighed, </p> 
+        <p class="line chorus">A sailor's blood begins racing.                   </p>
+        <p class="line chorus">With our hearts unbound and our flag unfurled,    </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">       We're underway and off to see the world!  </p> 
+        <p class="line chorus">*Underway and off to see the world!*      </p>
+    </div>
+    
+    
+    
+    <div class="stanza">
+        <p class="line chorus">Hey, ho, we'll go anywhere the wind is blowing </p> 
+        <p class="line">       Manly men are we!                              </p>
+        <p class="line chorus">Sailing for adventure on the deep blue sea.    </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line chorus">Danger walks the deck; we say what the heck </p> 
+        <p class="line chorus">We laugh at the perils we're facing         </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">       Every storm we ride is its own reward </p> 
+        <p class="line">       And people die by falling overboard!  </p>
+        <p class="line chorus">*People die by falling overboard!*    </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line chorus">Hey, ho, we'll go anywhere the wind is blowing    </p> 
+        <p class="line chorus">Hoist the sails and sing!                         </p>
+        <p class="line">       Sailing for adventure on the big blue wet thing.  </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">       I love to see them cry when they walk the plank                            </p> 
+        <p class="line">       I prefer to cut a throat                                                   </p>
+        <p class="line">       I like to hang 'em high and watch their little feet try to walk in the air </p>
+        <p class="line">       while their faces turn blue!                                                </p>
+    </div>
+
+    <p class="chorus note">(Awkward Pause)</p>
+
+    <div class="stanza">
+        <p class="line">       Just kidding!               </p> 
+        <p class="line chorus">It's a good life on a boat! </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line chorus">There are distant lands with burning sands </p> 
+        <p class="line chorus">That call across the ocean                 </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">       There are bingo games every funfilled day  </p> 
+        <p class="line">       And margaritas at the midnight buffet!     </p>
+        <p class="line chorus">*Margaritas at the midnight buffet!*       </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line chorus">Hey, ho, we'll go anywhere the wind is blowing! </p> 
+        <p class="line">       Should have took a train!                       </p>
+        <p class="line chorus">Sailing for adventure on the bounding main!     </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">       The salty breezes whisper; who knows what lies ahead?    </p> 
+        <p class="line">       I just know I was born to lead the life my father led!   </p>
+        <p class="line">       The stars will be our compass, wherever we may roam      </p> 
+        <p class="line">       And our mates will always be just like our family        </p>
+        <p class="line">       And though we may put into port, the sea is always home! </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line chorus">We'll chase our dreams standing on our own, </p> 
+        <p class="line chorus">Over the horizon to the great unknown!      </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line chorus">Hey, ho, we'll go anywhere the wind is blowing! </p> 
+        <p class="line chorus">Bold and brave and free                         </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line chorus">Sailing for adventure </p> 
+        <p class="line">       It's so nauseating!   </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line chorus">Sailing for adventure </p> 
+        <p class="line">       So exhilirating!      </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line chorus">Sailing for adventure   </p> 
+        <p class="line">       We're all celebrating!  </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line chorus">On the deep blue sea! </p>
+    </div>
+    
+</div><div id="sante_anno_song" class="song">
+
+    <h2 class="title">Sante Anno</h2>
+
+    <div class="stanza">
+        <p class="line">       O’ The navy never would have a lad/lass like me. </p>
+        <p class="line chorus">Away Sante Anno                                  </p>
+        <p class="line">       So I went in search of piracy,                   </p>
+        <p class="line chorus">along the coasts of Mexico                       </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza chorus">
+        <p class="line">       So heave her up and away we’ll go    </p> 
+        <p class="line chorus">Away Sante Anno                      </p>
+        <p class="line">       To Mexico where the warm winds blow, </p>  
+        <p class="line">       all along the coasts of Mexico       </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">       Those Mexican girls/boys I do adore.          </p>
+        <p class="line chorus">Away Sante Anno                               </p>
+        <p class="line">       With their shining eyes, and coal black hair, </p>
+        <p class="line chorus">along the coasts of Mexico                    </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">       So now we sail to the southern seas,              </p>
+        <p class="line chorus">Away Sante Anno                                   </p>
+        <p class="line">       We’ll have those Navy Lads/Lasses on their knees, </p>
+        <p class="line chorus">along the coasts of Mexico.                       </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">       When I was a young and in me prime.     </p>
+        <p class="line chorus">Away Sante Anno                         </p>
+        <p class="line">       I danced those girls/boys two at a time </p>
+        <p class="line chorus">along the coasts of Mexico              </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">       The Skipper like whiskey, the mate likes rum, </p>
+        <p class="line chorus">Away Sante Anno                               </p>
+        <p class="line">       The crew likes both but we can’t get none,    </p>
+        <p class="line chorus">along the coasts of Mexico.                   </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+   
+    <div class="stanza">
+        <p class="line">       Why should I leave the sea and settle down? </p>
+        <p class="line chorus">Away Sante Anno                             </p>
+        <p class="line">       I heard there is gold in every town,        </p>
+        <p class="line chorus">along the coasts of Mexico                  </p>
+    </div>
+
+    <p class="chorus">(Slow Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">       Now the work was hard and the wages low, </p>
+        <p class="line chorus">Away Sante Anno                          </p>
+        <p class="line">       But a pirates life is roll and go,       </p>
+        <p class="line chorus">along the coasts of Mexico!              </p>
+    </div>
+</div> <div id="spanish_ladies_song" class="song">
+
+    <h2 class="title">Spanish Ladies</h2>
+
+    <div class="stanza">
+        <p class="line">Farewell and adieu unto you Spanish ladies                 </p>
+        <p class="line">Farewell and adieu to you ladies of Spain                  </p>
+        <p class="line">For it's we've received orders for to sail for old England </p>
+        <p class="line">But we hope very soon we shall see you again               </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza chorus">
+        <p class="line">We'll rant and we'll roar like true British sailors     </p> 
+        <p class="line">We'll rant and we'll roar across the salt seas          </p>
+        <p class="line">Until we strike soundings in the Channel of Old England </p>  
+        <p class="line">From Ushant to Scilly is thirty-five leagues            </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">We hove our ship to with the wind at sou'west, boys </p>
+        <p class="line">We hove our ship to, our soundings to see           </p>
+        <p class="line">So we rounded and sounded; got forty-five fathoms   </p>
+        <p class="line">We squared our main yard and up channel steered we  </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">Now the first land we made it is called the Deadman </p>
+        <p class="line">Next Ram Head off Plymouth, off Portland the Wight  </p>
+        <p class="line">We sailed by Beachy, by Fairlee and Dungeness       </p>
+        <p class="line">Till we came abreast of the South Foreland Light    </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">Then the signal was made for the grand fleet to anchor           </p>
+        <p class="line">All in the Downs that night for to lie                           </p>
+        <p class="line">Then it's stand by your stoppers, see clear your shank-painters, </p>
+        <p class="line">Haul all your clew garnets, let tacks and sheets fly             </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza">
+        <p class="line">Now let every man toss off a full bumper                </p>
+        <p class="line">And let every man drink off a full glass                </p>
+        <p class="line">And we'll drink and be merry and drown melancholy       </p>
+        <p class="line">Singing, here's a good health to each true-hearted lass </p>
+    </div>
+
+</div><div id="storm_along_song" class="song">
+
+    <h2 class="title">Storm Along</h2>
+
+    <div class="stanza chorus">
+        <p class="line">Old Stormie's gone that good old man,  </p> 
+        <p class="line chorus">wey hey, Storm-along!           </p>
+        <p class="line">Old Stormie's gone, that good old man, </p>  
+        <p class="line chorus">aye, aye, Mister Storm-along!   </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">They dug his grave with a silver spade, </p> 
+        <p class="line chorus">wey hey, Storm-along!            </p>
+        <p class="line">His shroud of finest silk was made,     </p>  
+        <p class="line chorus">aye, aye, Mister Storm-along!    </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">They lowered him with a golden chain,   </p> 
+        <p class="line chorus">wey hey, Storm-along!            </p>
+        <p class="line">Their eyes all dim with more than rain, </p>  
+        <p class="line chorus">aye, aye, Mister Storm-along!    </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">An able sailor, bold and true,       </p> 
+        <p class="line chorus">wey hey, Storm-along!         </p>
+        <p class="line">A good old skipper to his crew,      </p>  
+        <p class="line chorus">aye, aye, Mister Storm-along! </p> 
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">He's moored at last, and furled his sail, </p> 
+        <p class="line chorus">wey hey, Storm-along!              </p>
+        <p class="line">No danger now from wreck or gale,         </p>  
+        <p class="line chorus">aye, aye, Mister Storm-along!      </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">Old Stormy has heard an angel call, </p> 
+        <p class="line chorus">wey hey, Storm-along!        </p>
+        <p class="line">So sing his dirge now, one and all, </p>  
+        <p class="line chorus">aye, aye, Mister Storm-along!</p>
+    </div>
+    
+</div><div id="st_brendans_fair_isle_song" class="song">
+
+    <h2 class="title">St. Brendan’s Fair Isle</h2>
+    <div class="stanza">
+        <p class="line">When I was a lass on the Emerald Isle                   </p>
+        <p class="line">I heard many stories both lovely and wild               </p>
+        <p class="line">About the great dragons and monsters that be            </p>
+        <p class="line">That swallow the ships when they sail on the sea        </p>
+        <p class="line">Though I was an artist with canvas and paints I sailed  </p>
+        <p class="line">with St. Brendan and his jolly saints                   </p>
+        <p class="line">We told the good people good-bye for a while            </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">We sailed for St. Brendan's Fair Isle, Fair Isle We </p>
+        <p class="line">sailed for St. Brendan's Fair Isle                  </p>
+    </div>
+
+    <div class="stanza">
+        <p class="line">We'd been on the ocean for ninety four days       </p>
+        <p class="line">We came to a spot where the sea was ablaze        </p>
+        <p class="line">Those demons from Hades were dancing with glee    </p>
+        <p class="line">And burning the sailors alive on the sea          </p>
+        <p class="line">Then St. Brendan walked on the blistering waves   </p>
+        <p class="line">He threw all the demons right back to their caves </p>
+        <p class="line">And all of the saints wore a heavenly smile       </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">One night while the brethren were lying asleep     </p>
+        <p class="line">A great dragon came up from under the deep         </p>
+        <p class="line">He thundered and lightened and made a great din He </p>
+        <p class="line">awakened St. Brendan and all of his men            </p>
+        <p class="line">The dragon came up with his mouth opened wide      </p>
+        <p class="line">We threw in a cross and the dragon died            </p>
+        <p class="line">We skinned him and cooked and feasted awhile       </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">We sailed for St. Brendan's Fair Isle, Fair Isle We </p>                            
+        <p class="line">sailed for St. Brendan's Fair Isle                  </p>            
+    </div>
+    
+    <div class="stanza">
+        <p class="line">At last we came unto a beautiful land         </p>
+        <p class="line">We all went ashore and we walked on the sand  </p>
+        <p class="line">We took our long bows and killed a Zebu       </p>
+        <p class="line">We roasted it up and had hot barbecue         </p>
+        <p class="line">And after awhile we were singing a song       </p>
+        <p class="line">We noticed the island was moving along        </p>
+        <p class="line">We ate and we drank and we rode in high style </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">Now Brendan said crew it is much to my wish     </p>
+        <p class="line">We ride on the back of the world's biggest fish </p>
+        <p class="line">Hold fast to the rope that is pulling the ship  </p>
+        <p class="line">We'll need it someday if this fish take a dip   </p>
+        <p class="line">We sailed every ocean we sailed every sea       </p>
+        <p class="line">We sailed every spot that a sailor could be     </p>
+        <p class="line">In forty four days we sailed ten million miles  </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza chorus">
+        <p class="line">We sailed for St. Brendan's Fair Isle, Fair Isle We </p>
+        <p class="line">sailed for St. Brendan's Fair Isle,                 </p>
+        <p class="line">We sailed for St. Brendan's Fair Isle, Fair Isle    </p>
+        <p class="line">We sailed for St. Brendan's Fair Isle,              </p>
+    </div>
+    
+</div><div id="the_fish_of_the_sea_song" class="song">
+
+    <h2 class="title">The Fish of the Sea</h2>
+
+    <div class="stanza">
+        <p class="line">Come all you young sailor men, listen to me,             </p> 
+        <p class="line">I'll sing you a song of the fish in the sea; And it's... </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p> 
+
+    <div class="stanza chorus">
+        <p class="line">Windy weather, boys, stormy weather, boys,             </p> 
+        <p class="line">When the wind blows, we're all together, boys; Blow ye </p>
+        <p class="line">winds westerly, blow ye winds, blow, Jolly sou'wester  </p> 
+        <p class="line">boys, steady she goes.                                 </p>
+    </div>
+    
+    <div class="stanza">
+        <p class="line">Up jumps the eel with his slippery tail,           </p> 
+        <p class="line">Climbs up aloft and reefs the topsail; And it's... </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">Then up jumps the shark with his nine rows of teeth,                  </p> 
+        <p class="line">Saying, "You eat the dough, boys, and I'll eat the beef!" And it's... </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">Up jumps the lobster with his heavy claws,             </p> 
+        <p class="line">Bites the main boom right off by the jaws! And it's... </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">Up jumps the halibut, lies flat on the deck, He says, </p> 
+        <p class="line">"Mister Captain, don't step on my neck!" And it's...  </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">Up jumps the herring, the king of the sea, Saying, "All </p> 
+        <p class="line">other fishes, now you follow me!" And it's...           </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p> 
+    
+    <div class="stanza">
+        <p class="line">Up jumps the codfish with his chuckle-head, He runs out up </p> 
+        <p class="line">forward and throws out the lead! And it's...               </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <div class="stanza">
+        <p class="line">Up jumps the whale, the largest of all,                          </p> 
+        <p class="line">"If you want any wind, well, I'll blow ye a squall!" And it's... </p>
+    </div>
+
+    <p class="chorus">(Chorus)</p>
+
+</div><div id="what_do_you_do_with_a_drunken_sailor_song" class="song">
+
+    <h2 class="title">What Do You Do With A Drunken Sailor?</h2>
+
+    <p class="chorus">(Chorus)</p>
+
+    <div class="stanza chorus">
+        <p class="line">What do you do with a drunken sailor, </p> 
+        <p class="line">What do you do with a drunken sailor, </p>
+        <p class="line">What do you do with a drunken sailor, </p>  
+        <p class="line">Earl-eye in the morning!              </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line">Way hay and up she rises </p> 
+        <p class="line">Way hay and up she rises </p>
+        <p class="line">Way hay and up she rises </p>  
+        <p class="line">Earl-eye in the morning  </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line not-chorus">Shave his belly with a rusty razor,  </p> 
+        <p class="line">Shave his belly with a rusty razor,             </p>
+        <p class="line">Shave his belly with a rusty razor,             </p>  
+        <p class="line">Earl-eye in the morning!                        </p>
+    </div>
+    
+    <div class="stanza chorus">
+        <p class="line not-chorus">Put him the long boat until he’s sober, </p> 
+        <p class="line">Put him the long boat until he’s sober,            </p>
+        <p class="line">Put him the long boat until he’s sober,            </p>  
+        <p class="line">Earl-eye in the morning!                           </p>
+    </div>
+    
+    <p class="chorus">(Chorus)</p>
+    
+    <p class="info">Alternatives</p>
+    
+    <div class="stanza">
+        <ol>
+            <li>Tickle him with a feather until he sneezes      </li>
+            <li>Use his hat to clean the poop deck              </li>
+            <li>Hang him from the yardarm until he's sober      </li>
+            <li>Give him a hair from the dog that bit him       </li>
+            <li>Put in the scuppers with a hose pipe on him     </li>
+            <li>Put him in the bilge and make him drink it      </li>
+            <li>Lock him in the brig with the Captain’s daughter</li>
+            <li>That’s what you do with a Drunken Sailor!       </li>
+        </ul>
+    </div>
+    
+</div><div id="yo_ho_yo_ho_song" class="song">
+    
+    <h2 class="title">Yo Ho, Yo Ho<br/>
+    ("It’s a Pirate’s Life For Me")</h2>
+    
+    <p class="line chorus">    Yo ho, yo ho, a pirate's life for me</p> 
+    
+    <div class="stanza">
+        <p class="line">       We pillage, we plunder, we rifle and loot  </p> 
+        <p class="line chorus">Drink up me hearties, yo ho                </p>
+        <p class="line">       We kidnap and ravage and don't give a hoot </p>  
+        <p class="line chorus">Drink up me hearties, yo ho                </p>
+    </div>
+    
+    <p class="line chorus">    Yo ho, yo ho, a pirate's life for me</p> 
+    
+    <div class="stanza">
+        <p class="line">       We extort and pilfer, we filch and sack </p> 
+        <p class="line chorus">Drink up me hearties, yo ho             </p>
+        <p class="line">       Maraud and embezzle and even highjack   </p>  
+        <p class="line chorus">Drink up me hearties, yo ho             </p>
+    </div>
+
+    <p class="line chorus">    Yo ho, yo ho, a pirate's life for me</p> 
+    
+    <div class="stanza">
+        <p class="line">       We kindle and char and enflame and ignite  </p> 
+        <p class="line chorus">Drink up me 'earties, yo ho                </p>
+        <p class="line">       We burn up the city, we're really a fright </p>  
+        <p class="line chorus">Drink up me hearties, yo ho                </p>
+    </div>
+    
+    <p class="line chorus">    Yo ho, yo ho, a pirate's life for me</p> 
+
+    <div class="stanza">
+        <p class="line">       We're rascals and scoundrels, we're villains and knaves </p> 
+        <p class="line chorus">Drink up me 'earties, yo ho                             </p>
+        <p class="line">       We're devils and black sheep, we're really bad eggs     </p>  
+        <p class="line chorus">Drink up me hearties, yo ho                             </p>
+    </div>
+    
+    <p class="line chorus">    Yo ho, yo ho, a pirate's life for me</p> 
+    
+    <div class="stanza">
+        <p class="line">       We're beggars and blighters and ne'er do-well cads, </p> 
+        <p class="line chorus">Drink up me hearties, yo ho                         </p>
+        <p class="line">       Aye, but we're loved by our mommies and dads,       </p>  
+        <p class="line chorus">Drink up me 'earties, yo ho                         </p>
+    </div>
+    
+    <p class="line chorus">    Yo ho, yo ho, a pirate's life for me</p> 
+    
+    <p class="chorus">(End)</p>
+
+</div><div>                          
 </html>
